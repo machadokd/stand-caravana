@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Video with Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .carousel-thumbnails {
+            display: flex;
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+
+        .carousel-thumbnails img {
+            cursor: pointer;
+            margin-right: 5px;
+            height: 80px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="Logo" class="navbar-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="viaturas.html">Viaturas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contactos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="pt-5">
+        <div class="container mt-5">
+
+            <div class="row parent">
+                <div class="col-8">
+
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/800x400.png" class="d-block w-100" alt="Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/caravana.jpeg" class="d-block w-100" alt="Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/800x400.png" class="d-block w-100" alt="Image 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="carousel-thumbnails mt-3">
+                        <img src="assets/800x400.png" data-bs-target="#carouselExample" data-bs-slide-to="0"
+                            class="active" alt="Thumbnail 1">
+                        <img src="assets/caravana.jpeg" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                            alt="Thumbnail 2">
+                        <img src="assets/800x400.png" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                            alt="Thumbnail 3"><img src="assets/800x400.png" data-bs-target="#carouselExample"
+                            data-bs-slide-to="0" class="active" alt="Thumbnail 1">
+                        <img src="assets/800x400.png" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                            alt="Thumbnail 2">
+                        <img src="assets/800x400.png" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                            alt="Thumbnail 3"><img src="assets/800x400.png" data-bs-target="#carouselExample"
+                            data-bs-slide-to="0" class="active" alt="Thumbnail 1">
+                        <img src="assets/800x400.png" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                            alt="Thumbnail 2">
+                        <img src="assets/800x400.png" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                            alt="Thumbnail 3"><img src="assets/800x400.png" data-bs-target="#carouselExample"
+                            data-bs-slide-to="0" class="active" alt="Thumbnail 1">
+                        <img src="assets/800x400.png" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                            alt="Thumbnail 2">
+                        <img src="assets/800x400.png" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                            alt="Thumbnail 3"><img src="assets/800x400.png" data-bs-target="#carouselExample"
+                            data-bs-slide-to="0" class="active" alt="Thumbnail 1">
+                        <img src="assets/800x400.png" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                            alt="Thumbnail 2">
+                        <img src="assets/800x400.png" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                            alt="Thumbnail 3">
+                    </div>
+
+                    <div>
+                        <p>The standard Lorem Ipsum passage, used since the 1500s
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            
+                            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+                            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                            
+                            1914 translation by H. Rackham
+                            "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+                            
+                            Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+                            "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+                            
+                            </p>
+                    </div>
+
+                </div>
+
+                <div class="col-4 col-sm-4 sticky">
+                    <!-- <h3>Mercedes Class A 220d</h3>
+                    <h5>Desportivo - Gasoleo</h5>
+                    <p>2016</p>
+                    <h4>23.000€</h4>
+
+                    <button type="button" class="btn btn-primary">Primary</button> -->
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="card-title">Mercedes-Benz CLA 180</h1>
+                            <h5 class="card-subtitle mb-3 text-muted">d AMG Line Aut.</h5>
+                            <h2 class="mb-4">34.900€</h2>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary">Entre em contacto</button>
+                                <!-- <div class="row mt-2">
+                                    <div class="col">
+                                        <button class="btn btn-dark w-100">Ligar</button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn btn-outline-dark w-100">Reservar</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <h3 class="mt-4">Características</h3>
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><i class="bi bi-calendar-event"></i> Mês/Ano</span>
+                                    <span>Fevereiro 2022</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><i class="bi bi-speedometer2"></i> Quilómetros</span>
+                                    <span>69.000 Kms</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><i class="bi bi-gear"></i> Motor</span>
+                                    <span>116 CV / 1950 CC</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><i class="bi bi-shift-fill"></i> Transmissão</span>
+                                    <span>Automática</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><i class="bi bi-fuel-pump-diesel"></i> Combustível</span>
+                                    <span>Diesel</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><i class="bi bi-car-front"></i> Tipo</span>
+                                    <span>Sedan</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><i class="bi bi-person-fill"></i> Lugares</span>
+                                    <span>5</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><i class="bi bi-door-closed"></i> Portas</span>
+                                    <span>5</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><i class="bi bi-palette-fill"></i> Cor</span>
+                                    <span>Preto</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><i class="bi bi-shield-fill-check"></i> Garantia</span>
+                                    <span>18 meses</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</body>
+
+</html>

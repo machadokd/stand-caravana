@@ -1,0 +1,9 @@
+.sticky{
+    position: sticky;
+    top: 50px;
+    height: fit-content;
+}
+
+.parent{
+    position: relative;
+}

@@ -1,0 +1,74 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 4rem;
+}
+
+.more-content {
+    padding: 50px 15px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent background */
+}
+
+.col-card-destaque {
+    margin-top: 15px;
+}
+
+@media (min-width: 767px) {
+    .col-card-destaque {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.navbar-nav .nav-item {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-brand {
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 150px; /* Set logo width */
+}
+
+@media (max-width: 767px) {
+    .col-card-destaque {
+        display: flex;
+        justify-content: center;
+    }
+    .content {
+        background-image: url('/assets/background-image.webp'); /* Path to your mobile background image */
+        background-size: cover;
+        background-position: center;
+    }
+}
